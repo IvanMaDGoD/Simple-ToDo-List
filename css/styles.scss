@@ -74,8 +74,14 @@ body{
     background-color: #efefef;
     padding: 16px;
 }
+.options__complete-all-btn{
+    border-bottom-left-radius: 10px;
+}
 .filters{
     display: flex;
+}
+.filters__completed{
+    border-bottom-right-radius: 10px;
 }
 @media (max-width: 815px){
     .options-row{
