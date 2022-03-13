@@ -118,14 +118,24 @@ body {
     align-items: center;
     text-align: center;
   }
-
+  .options__complete-all-btn{
+    border-bottom-left-radius: 0;
+  }
   .filters {
     gap: 2px;
     grid-column: 1/7;
   }
+  .filters__all{
+    border-bottom-left-radius: 10px;
+  }
 }
 @media (max-width: 365px) {
   .filters{
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 325px) {
+  .filters__completed{
     font-size: 0.9em;
   }
 }
