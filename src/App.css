@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,10 +16,6 @@ body {
   body {
     margin: auto;
   }
-}
-
-.container {
-  min-width: 100%;
 }
 
 .completed {
@@ -56,7 +52,7 @@ body {
 
 .form__submit {
   border-top-right-radius: 10px;
-  min-width: 6em;
+  min-width: 4em;
 }
 
 .title, .form {
@@ -83,9 +79,11 @@ body {
 }
 
 .option {
+  border: none;
   cursor: pointer;
   background-color: #efefef;
   padding: 16px;
+  font-size: 16px;
 }
 
 .options__complete-all-btn {
@@ -126,6 +124,11 @@ body {
     grid-column: 1/7;
   }
 }
+@media (max-width: 365px) {
+  .filters{
+    font-size: 0.9em;
+  }
+}
 .todo {
   margin: 6px 0;
   display: flex;
@@ -133,6 +136,7 @@ body {
 
 .todo__item {
   cursor: pointer;
+  border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   flex-grow: 1;
@@ -141,6 +145,17 @@ body {
   padding: 16px;
   font-size: 1.2em;
   overflow-wrap: anywhere;
+  outline: none;
+}
+@media (max-width: 365px) {
+  .todo__item{
+    font-size: 0.9em;
+  }
+}
+
+.check{
+  text-decoration: line-through;
+  opacity: .5;
 }
 
 .todo__check-btn, .todo__delete-btn, .todo__change-btn {
@@ -164,5 +179,3 @@ body {
 .todo__change-btn {
   background-color: #0a64fa;
 }
-
-/*# sourceMappingURL=styles.css.map */
