@@ -44,6 +44,7 @@ body {
   border-top-left-radius: 10px;
   width: 100%;
 }
+
 @media (max-width: 450px) {
   .form__input {
     padding-right: 5px;
@@ -53,6 +54,9 @@ body {
 .form__submit {
   border-top-right-radius: 10px;
   min-width: 4em;
+}
+.form__submit:hover{
+  background-color: #d1d1d1;
 }
 
 .title, .form {
@@ -84,6 +88,9 @@ body {
   background-color: #efefef;
   padding: 16px;
   font-size: 16px;
+}
+.option:hover{
+  background-color: #d1d1d1;
 }
 
 .options__complete-all-btn {
@@ -156,6 +163,9 @@ body {
   font-size: 1.2em;
   overflow-wrap: anywhere;
   outline: none;
+}
+.todo__item:hover{
+  background-color: #ededed;
 }
 @media (max-width: 365px) {
   .todo__item{
